@@ -2,6 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('master','Pagelayout.master');
+Route::view('home','Pagelayout.home');  
