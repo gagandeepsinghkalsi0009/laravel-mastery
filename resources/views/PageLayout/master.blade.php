@@ -16,11 +16,49 @@
     <a href="">Contact Us</a>
    </div>
 
+
    <br><br><br><br>
    <!-- Main Content -->
-   <div class="@yield('class','class')">
+    @hassection('content')
     @yield('content')
+    @else
+    <h2>No Content Found</h2>
+    @endif
    </div>
+
+   
+   @section('sidebar')
+   <h1>hello</h1>
+   <h1>hello</h1>
+   <h1>hello</h1>
+   <h1>hello</h1>
+   @show
+
+   @hassection('div')
+   @yield('div')
+   @else
+   <h2>No Div Found</h2>
+   @endif
+
+   @hassection('carousel')
+   @yield('carousel')
+   @else
+   <h2>No Carousel Found</h2>
+   @endif
+
+   @section('show')
+   <h2>1</h2>
+   <h2>2</h2>
+   <h2>3</h2>
+   <h2>4</h2>
+    @show
+
+    @section('gagan')
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eos dolores libero quod delectus ab voluptate. Amet labore aut in.</p>
+    @show
+
+    @stack('kalsi')
+    @stack('ram')
 
    <!-- Footer -->
   <div class="footer">
@@ -32,6 +70,5 @@
 
     <p>Designed & Developed By Gaganadeep</p>
   </footer>
-</body>
-</body>
+</body>   
 </html>
